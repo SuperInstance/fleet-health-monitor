@@ -39,7 +39,12 @@ class TestGetTree(unittest.TestCase):
         deep.mkdir(parents=True)
         (deep / "file.txt").write_text("x")
         result = self.get_tree(str(self.tmpdir), max_depth=2)
-        self.assertNotIn("d", result)
+        # Check that deep path components don't appear as directory entries
+        # (use basename patterns to avoid false positives from the tmpdir name)
+        lines = result.split('\n')
+        dir_entries = [l.strip().rstrip('/') for l in lines if l.strip().endswith('/')]
+        self.assertNotIn("c", dir_entries)
+        self.assertNotIn("d", dir_entries)
 
     def test_ignores_git(self):
         (self.tmpdir / ".git").mkdir()
