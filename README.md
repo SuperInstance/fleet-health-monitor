@@ -235,6 +235,15 @@ scripts/
 └── ...                 # Service launchers
 ```
 
+## Related Repos
+
+| Repo | Purpose |
+|------|--------|
+| [`plato-types`](https://github.com/SuperInstance/plato-types) | Core types for the PLATO tile protocol |
+| [`agent-field`](https://github.com/SuperInstance/agent-field) | Shared tensor field for agent room coordination |
+| [`constraint-inference`](https://github.com/SuperInstance/constraint-inference) | Reverse-engineers constraints from user behavior |
+| [`captains-log`](https://github.com/SuperInstance/captains-log) | Oracle1 personal-agentic-growth diary |
+
 ## License
 
 MIT
