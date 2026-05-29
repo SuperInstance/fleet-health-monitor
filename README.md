@@ -56,6 +56,7 @@ watchdog.start()
 ### `FleetDashboard` — Real-time visualization
 
 ## How It Fits
+- [OpenConstruct Documentation](https://github.com/SuperInstance/openconstruct-docs) — ecosystem-wide docs and guides
 
 The system-level health daemon for the [SuperInstance fleet](https://github.com/SuperInstance). Complements [agent-therapy](https://github.com/SuperInstance/agent-therapy) (behavioral health) with infrastructure-level monitoring.
 
