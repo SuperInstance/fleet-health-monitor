@@ -1,6 +1,6 @@
 [project]
-name = "fleet-health-monitor"
-version = "0.2.0"
+name = "si-fleet-health-monitor"
+version = "0.1.0"
 description = "Fleet health monitoring — track health across a fleet of agents"
 readme = "README.md"
 license = { text = "MIT" }
