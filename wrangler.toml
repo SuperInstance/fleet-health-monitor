@@ -1,0 +1,14 @@
+name = "fleet-health-monitor"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[triggers]
+crons = ["* * * * *"]  # Every minute
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fleet-health"
+database_id = "placeholder"
+
+[vars]
+FLEET_EDGE_URL = "https://fleet-edge-worker.casey-digennaro.workers.dev"
